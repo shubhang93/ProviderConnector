@@ -14,4 +14,4 @@ class App extends Component {
   }
 }
 
-export default Connect({ contextStore: PropTypes.object })(App);
+export default Connect({ contextStore:PropTypes.object })(App);

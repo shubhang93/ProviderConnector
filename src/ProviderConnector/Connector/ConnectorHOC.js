@@ -1,12 +1,10 @@
 import React from 'react';
-
-const ConnectorHOC = contextTypes => Component => {
-  console.log({ contextTypes });
+import PropTypes from 'prop-types';
+const ConnectorHOC = () => Component => {
   const ConnectedComponent = (props, context) => {
-    console.log({ context });
     return <Component {...props} {...context} />;
   };
-  ConnectedComponent.contextTypes = contextTypes;
+  ConnectedComponent.contextTypes = { contextStore: PropTypes.object };
   return ConnectedComponent;
 };
 
