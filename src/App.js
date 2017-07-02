@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import Provider from "./Provider/Provider";
-
 
 class App extends Component {
   render() {
