@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const ConnectorHOC = contextTypes => Component => {
   const ConnectedComponent = (props, context) =>
@@ -7,4 +7,4 @@ const ConnectorHOC = contextTypes => Component => {
   return ConnectedComponent;
 };
 
-export default ConnectorHOC
+export default ConnectorHOC;

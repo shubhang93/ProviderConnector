@@ -1,9 +1,13 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
+import TestButton from './TestComponent';
 
 class App extends Component {
   render() {
     return (
-      <div>Inside the App Component</div>
+      <div>
+        <p>TestComponent</p>
+        <TestButton />
+      </div>
     );
   }
 }
