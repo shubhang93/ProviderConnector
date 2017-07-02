@@ -1,11 +1,11 @@
 /**
  * Created by shubhang on 2/7/17.
  */
-import React, { Component } from 'react';
-
+import React from 'react';
+import { Connect } from './ProviderConnector';
+import PropTypes from 'prop-types';
 const TestButton = props => {
-  console.log({ props });
-  return <button style={props.buttonTheme}>Click</button>;
+  return <button style={{ color: props.contextStore.color }}>Click</button>;
 };
 
-export default TestButton
+export default Connect({ contextStore: PropTypes.Object })(TestButton);

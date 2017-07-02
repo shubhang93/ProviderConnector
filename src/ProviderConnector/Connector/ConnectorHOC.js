@@ -1,8 +1,11 @@
 import React from 'react';
 
 const ConnectorHOC = contextTypes => Component => {
-  const ConnectedComponent = (props, context) =>
-    <Component {...props} {...context} />;
+  console.log({ contextTypes });
+  const ConnectedComponent = (props, context) => {
+    console.log({ context });
+    return <Component {...props} {...context} />;
+  };
   ConnectedComponent.contextTypes = contextTypes;
   return ConnectedComponent;
 };
