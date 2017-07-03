@@ -3,9 +3,9 @@
  */
 import React from 'react';
 import { Connect } from './ProviderConnector';
-import PropTypes from 'prop-types';
+
 const TestButton = props => {
   return <button style={{ color: props.contextStore.color }}>Click</button>;
 };
 
-export default Connect({ contextStore: PropTypes.Object })(TestButton);
+export default Connect()(TestButton);
